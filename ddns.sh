@@ -2,6 +2,7 @@
 # version 4.0, currently checks against local file (last change), NB IPv4 only
 # 4.1 change the AUTH specs for delivered variables from docker $VARIABLE
 # 4.2 change directory & file details for a docker location
+# 4.3 add the resolv.conf entries and restart the ip stack to make it work
 
 # CHANGE THESE
 # $auth_email="email@mydomain.com"
