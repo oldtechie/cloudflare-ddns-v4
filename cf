@@ -1,17 +1,19 @@
 #!/bin/bash
 # version 4.0, currently checks against local file (last change)
+# 4.1 change the AUTH specs for delivered variables from docker $VARIABLE
+# 4.2 change directory & file details for a docker location
 
 # CHANGE THESE
-auth_email="lee.hiscott@gmail.com"
-auth_key="2e6ebf4b2c915982a9446047cab2fd17f1356" # found in cloudflare account settings
-zone_name="hiscott.net"
-record_name="dragon.hiscott.net"
+# $auth_email="email@mydomain.com"
+# $auth_key="123123123123123123123" # found in cloudflare account settings
+# $zone_name="mydomain.com"
+# $record_name="myrecord.mydomain.com"
 
 # MAYBE CHANGE THESE
 ip=$(curl -s http://ipv4.icanhazip.com)
-ip_file="/home/lee/cf-version4/ip.txt"
-id_file="/home/lee/cf-version4/cloudflare.ids"
-log_file="/home/lee/cf-version4/cloudflare.log"
+ip_file="/onfig/ip.txt"
+id_file="/config/cloudflare.ids"
+log_file="/config/cloudflare.log"
 
 # LOGGER - disable 15 minute entries which do nothing once proven
 log() {
