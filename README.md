@@ -9,3 +9,16 @@ It goes & gets the ID with an API call, using cURL and updating only if necessar
 Force re-write by changing the contents of the ip.txt file.
 Needs to be put into CRON to run every hour, or however frequently you consider necessary.
 ;-)
+Adjustment:
+
+Currently the process is:
+
+ check current real-world IP (ipconfig.co / icanhazip.com etc) and compare to ip.txt
+ 
+ if different - then go through update process so record XXX is set to current real-world-ip
+
+Needs to change so that an nslookup check on current record XXX value is done (and put into ip.txt?)
+
+Then compare real-world-IP with XXX record
+
+Then go through change process if required
