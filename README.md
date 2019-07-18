@@ -15,6 +15,8 @@ Currently the process is:
 
  check current real-world IP (ipconfig.co / icanhazip.com etc) and compare to ip.txt
  
+ dig @1.1.1.1 +short dragon.hiscott.net > ip2.txt
+ 
  if different - then go through update process so record XXX is set to current real-world-ip
 
 Needs to change so that an nslookup check on current record XXX value is done (and put into ip.txt?)
